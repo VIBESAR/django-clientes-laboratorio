@@ -1,0 +1,8 @@
+Inserta tus capturas reales en el documento editable de la entrega:
+01_local_terminal.png   -> Comando python manage.py runserver en TU PC.
+02_local_login.png      -> http://127.0.0.1:8000/login/ en TU navegador.
+03_local_clientes.png   -> Formulario y listado de clientes guardados.
+04_railway_deploy.png   -> Deployment SUCCESS / Active en TU Railway.
+05_railway_mysql.png    -> Servicio MySQL funcionando (sin contraseñas visibles).
+06_web_publica.png      -> Dominio https://...up.railway.app funcionando.
+IMPORTANTE: no fabricar capturas. No mostrar contraseñas, claves o tokens.

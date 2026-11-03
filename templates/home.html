@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Panel de inicio{% endblock %}
+{% block content %}
+<div class="row align-items-center g-5">
+    <div class="col-lg-7">
+        <span class="eyebrow">PANEL DE INICIO · ACCESO AUTORIZADO</span>
+        <h1 class="display-5 fw-bold mt-3">Bienvenido, {{ user.username }}</h1>
+        <p class="lead text-muted mt-3">Este laboratorio demuestra autenticación con Django y un módulo de clientes conectado a MySQL.</p>
+        <div class="mt-4 d-flex gap-2 flex-wrap">
+            <a href="{% url 'clientes_crear' %}" class="btn btn-primary btn-lg">Administrar clientes</a>
+            <a href="{% url 'password_reset' %}" class="btn btn-outline-secondary btn-lg">Recuperar contraseña</a>
+        </div>
+    </div>
+    <div class="col-lg-5"><div class="feature-panel">
+        <div class="feature-icon">✓</div><h2 class="h4 mt-3">Módulos incluidos</h2>
+        <ul class="list-unstyled mt-3 mb-0 feature-list"><li>Registro de usuarios</li><li>Inicio y cierre de sesión</li><li>Restablecimiento de contraseña</li><li>Alta y listado de clientes</li><li>Protección de rutas con sesión</li></ul>
+    </div></div>
+</div>
+{% endblock %}
